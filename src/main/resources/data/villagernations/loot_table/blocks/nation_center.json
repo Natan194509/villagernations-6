@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:block",
+  "pools": [{
+    "rolls": 1.0,
+    "entries": [{ "type": "minecraft:item", "name": "villagernations:nation_center" }],
+    "conditions": [{ "condition": "minecraft:survives_explosion" }]
+  }]
+}

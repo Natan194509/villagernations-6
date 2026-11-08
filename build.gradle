@@ -1,0 +1,30 @@
+plugins {
+    id 'java-library'
+    // Confira a versão mais recente do plugin em https://projects.neoforged.net/neoforged/moddevgradle
+    id 'net.neoforged.moddev' version '2.0.78'
+}
+
+version = '0.6.0'
+group = 'com.example.villagernations'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    // Confira a versão do NeoForge para o seu Minecraft 1.21.x em https://projects.neoforged.net/neoforged/neoforge
+    version = '21.1.172'
+
+    runs {
+        client { client() }
+        server { server() }
+    }
+
+    mods {
+        villagernations { sourceSet sourceSets.main }
+    }
+}
+
+repositories { mavenCentral() }
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}

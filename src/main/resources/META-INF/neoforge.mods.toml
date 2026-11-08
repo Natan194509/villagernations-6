@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="villagernations"
+version="0.6.0"
+displayName="Villager Nations"
+description='''Comande uma nação de villagers da Idade da Pedra até a era moderna.'''
+
+[[dependencies.villagernations]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.villagernations]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
